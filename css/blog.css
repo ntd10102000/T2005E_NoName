@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    color: #343132;
+    background-color: #f2f2f2;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navInfo {
+}
+
+.navInfo1 {
+    font-size: 28px;
+}
+
+.navInfo2 {
+    text-align: right;
+    font-size: 18px;
+
+}
