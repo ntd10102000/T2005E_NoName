@@ -1,0 +1,655 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    color: #343132;
+    background-color: #f2f2f2;
+    transition: background-color .5s;
+}
+.secttion{
+    float: left;
+    width: 100%;
+}
+.containerner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.slide4{
+    background-image: url("../imgs/header_footer/groomax-ourwork.jpg");
+    padding-top: 100px;
+    background-position: 0 0 !important;
+    background-repeat: repeat !important;
+    padding-bottom: 150px;
+}
+.input{
+    padding: 50px;
+    float: left;
+    width: 50%;
+    background-color: #ffffff;
+}
+.input h2{
+    color: rgb(164,140,110);
+    font-size: 2.3em;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: none;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.input p{
+    margin-bottom: 1em;
+    color: #004258;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: none;
+    font-size: 1.3em;
+}
+.input_content{
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+}
+.input_content label{
+    color: #b88c6e;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    padding: .5em 1.2em;
+}
+.input input{
+    margin-top: 15px;
+    padding: 11px;
+    border: 1px solid #d1c5b6;
+    color: #b88c6e;
+    width: 92%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+.input input[type="time"]{
+    margin-left: 17px;
+}
+.input .nextstep{
+    border: 0;
+    background-color: #a48c6e;
+    padding: 0 .5em !important;
+    line-height: 3.6em;
+    font-weight: 400;
+    height: 3.6em;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(255,255,255,1);
+    float: right;
+    margin-top: 100px;
+    width: 46%;
+    outline: none;
+}
+.nextstep:hover{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #a48c6e90;
+}
+.input1_content .dat{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+.dat input {
+    display: none; /* Hide the default checkbox */
+}
+/* Style the artificial checkbox */
+.dat span {
+    height: 25px;
+    width: 25px;
+    border: 3px solid #a48c6e;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-right: 15px;
+}
+.input1_content .dat p{
+    color: #252525;
+    float: right;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 335px;
+}
+
+/* Style its checked state...with a ticked icon */
+[type=checkbox]:checked + span:before {
+    content: '\2714';
+    position: absolute;
+    left: 0;
+    top: -8px;
+}
+.hr1 hr{
+    margin: .6em 0;
+    border: 0;
+    border-top-style: dashed;
+    border-top-width: .05em;
+    background-image: none;
+    width: 100%;
+    color: #b88c6e;
+}
+.chot small{
+    margin-left: 48px;
+    color: #252525!important;
+    font-size: 14px!important;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+.chot span{
+    color: #252525!important;
+    font-size: 18px!important;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+}
+.chot p{
+    color: #8b8b8b;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 48px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.hr2 hr{
+    margin: .6em 0 .6em 0;
+    border: 0;
+    border-top-style: solid;
+    border-top-width: .16em;
+    background-image: none;
+    width: 100%;
+    color: #b88c6e;
+}
+.thanhtien .h3_left{
+    width: 50%;
+    float: left;
+    font-size: 25px!important;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+}
+.thanhtien .h3_right{
+    float: right;
+    font-size: 25px!important;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+}
+#loader {
+    display: none;
+    z-index: 1;
+    margin-left: 208px;
+    margin-top: 50px;
+    border: 12px solid #a48c6e;
+    border-radius: 50%;
+    border-top: 12px solid #ffffff;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.input1{
+    padding: 50px;
+    float: left;
+    width: 50%;
+    background-color: #ffffff;
+    margin-left: -50%;
+    display: none;
+}
+.input1 h2{
+    color: rgb(164,140,110);
+    font-size: 2.3em;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: none;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.input1 .what{
+    margin-bottom: 1em;
+    color: #004258;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: none;
+    font-size: 1.3em;
+}
+.input1_content{
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+.input1_content label{
+    color: #a48c6e;
+    font-size: 25px;
+}
+.input1 input{
+    color: #a48c6e;
+    font-size: 25px;
+}
+.input1 input[type="checkbox"]{
+    margin-left: 17px;
+}
+.input1 .nextstep{
+    border: 0;
+    background-color: #a48c6e;
+    padding: 0 .5em !important;
+    line-height: 3.6em;
+    font-weight: 400;
+    height: 3.6em;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: none;
+    color: rgba(255,255,255,1);
+    float: right;
+    margin-top: 100px;
+    width: 46%;
+    outline: none;
+}
+.input2_content .dat{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+.input2_content .dat p{
+    color: #252525;
+    float: right;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 305px;
+}
+.nextstep:hover{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #a48c6e90;
+}
+.input1 .back{
+    height: 3.6em;
+    padding: 0 20px;
+    margin-right: 30px;
+    background-color: #ffffff;
+    line-height: 3.6em;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: none;
+    float: right;
+    outline: none;
+    color: #a48c6e;
+    border: 1px solid #d1c5b6;
+    margin-top: 100px;
+}
+.input2{
+    padding: 50px;
+    float: left;
+    width: 50%;
+    background-color: #ffffff;
+    margin-left: -50%;
+    display: none;
+}
+.input2 h2{
+    color: rgb(164,140,110);
+    font-size: 2.3em;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: none;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.input2 .what{
+    margin-bottom: 1em;
+    color: #004258;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: none;
+    font-size: 1.3em;
+}
+.input2_content{
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+.input2_content label{
+    color: #a48c6e;
+    font-size: 25px;
+}
+.input2 input{
+    color: #a48c6e;
+    font-size: 25px;
+}
+.input2 input[type="checkbox"]{
+    margin-left: 17px;
+}
+.input2 .nextstep{
+    border: 0;
+    background-color: #a48c6e;
+    padding: 0 .5em !important;
+    line-height: 3.6em;
+    font-weight: 400;
+    height: 3.6em;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: none;
+    color: rgba(255,255,255,1);
+    float: right;
+    margin-top: 100px;
+    width: 46%;
+    outline: none;
+}
+.nextstep:hover{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #a48c6e90;
+}
+.input2 .back{
+    height: 3.6em;
+    padding: 0 20px;
+    margin-right: 30px;
+    background-color: #ffffff;
+    line-height: 3.6em;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: none;
+    float: right;
+    outline: none;
+    color: #a48c6e;
+    border: 1px solid #d1c5b6;
+    margin-top: 100px;
+}
+.back:hover{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #a48c6e;
+    color: #f9f9f9;
+}
+.input3{
+    padding: 50px;
+    float: left;
+    width: 50%;
+    background-color: #ffffff;
+    display: none;
+    margin-left: -50%;
+}
+.input3 h2{
+    color: rgb(164,140,110);
+    font-size: 2.3em;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: none;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.input3 p{
+    margin-bottom: 1em;
+    color: #004258;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: none;
+    font-size: 1.3em;
+    float: left;
+}
+.input3_content{
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+}
+.input3_content1{
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+.input3_content label{
+    color: #b88c6e;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    padding: .5em 1.2em;
+}
+.input3_content1 label{
+    color: #b88c6e;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    padding: .5em 1.2em;
+}
+.input3 input{
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #d1c5b6;
+    color: #b88c6e;
+    width: 92%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+.input3 input[type="time"]{
+    margin-left: 17px;
+}
+.input3 .login{
+    border: 0;
+    background-color: #a48c6e;
+    padding: 0 .5em !important;
+    line-height: 3.6em;
+    font-weight: 500;
+    height: 3.8em;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(255,255,255,1);
+    float: right;
+    margin-top: 100px;
+    width: 46%;
+    outline: none;
+}
+.input3 .nextstep{
+    border: 0;
+    background-color: #a48c6e;
+    padding: 0 .5em !important;
+    line-height: 3.6em;
+    font-weight: 400;
+    height: 3.6em;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(255,255,255,1);
+    float: right;
+    margin-top: 100px;
+    width: 46%;
+    outline: none;
+}
+.nextstep:hover{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #a48c6e90;
+}
+.login:hover{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #a48c6e90;
+}
+.input3 .back{
+    height: 3.6em;
+    padding: 0 20px;
+    margin-right: 30px;
+    background-color: #ffffff;
+    line-height: 3.6em;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: none;
+    float: right;
+    outline: none;
+    color: #a48c6e;
+    border: 1px solid #d1c5b6;
+    margin-top: 100px;
+}
+.back:hover{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #a48c6e;
+    color: #f9f9f9;
+}
+.slide3_head h2{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+.slide3_head p{
+    color: rgb(154, 167, 175);
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 80px;
+}
+.right_img{
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+.right_img img{
+    height: auto;
+    width: 100%;
+    vertical-align: top;
+}
+.forgot{
+    padding: 20px;
+    float: left;
+}
+.forgot a{
+    color: rgb(164,140,110);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.item_img{
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    position: relative;
+}
+.item_img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.item_img .flex{
+    position: absolute;
+    bottom: 0;
+    width: 85%;
+    transition: .5s ease;
+    padding: 20px;
+    text-align: center;
+    height: 86.2%;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    background: rgba(255, 214, 0, 0.5);
+    opacity: 0;
+}
+.item_img .flex a{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-family: 'Kalam', cursive;
+    font-weight: 600;
+    font-size: 26px;
+}
+.item_img .flex p{
+    margin-top: 130px;
+}
+.item_img:hover .flex{
+    opacity: 1;
+}
+.slide3_5{
+    background-image: url("../imgs/header_footer/groomax-counter.jpg");
+}
+.slide3_5-item{
+    background-color: #fffffe;
+    padding: 20px;
+    width: 22%;
+    text-align: center;
+    font-weight: 800;
+    color: #262625;
+    font-family: 'Nunito', sans-serif;
+    margin: 100px 15px;
+    box-shadow: 0 5px 15px 4px rgba(0, 0, 0, 0.06);
+    float: left;
+}
+.slide3_5-item span{
+    font-size: 60px;
+}
+.slide3_5-item p{
+    font-size: 20px;
+}
+/*.header-shop-container {*/
+/*    float: left;*/
+/*    width: 100%;*/
+/*    background-color: #f9f9f9;*/
+/*    border-bottom: 1px solid #e4e4eb;*/
+/*}*/
+
+/*.shop-row {*/
+/*    float: left;*/
+/*    margin: 0 15px;*/
+/*    text-align: left;*/
+/*    padding: 25px 0;*/
+/*    width: 100%;*/
+/*    line-height: 1.5;*/
+/*}*/
+
+/*.shop-left {*/
+/*    float: left;*/
+/*    padding: 0 15px;*/
+/*    width: 50%;*/
+/*}*/
+
+/*.shop-left h1 {*/
+/*    font-family: 'Kalam', cursive;*/
+/*    text-align: left;*/
+/*    text-transform: uppercase;*/
+/*    font-size: 20px;*/
+/*    font-weight: bold;*/
+/*    width: 100%;*/
+/*    margin-bottom: 0;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*.shop-right {*/
+/*    float: right;*/
+/*    padding: 8px 15px;*/
+/*    width: 50%;*/
+/*    text-align: right;*/
+
+/*}*/
+
+/*.shop-right ul {*/
+/*    float: right;*/
+/*    text-align: right;*/
+/*    list-style: none;*/
+/*}*/
+
+/*.shop-right li {*/
+/*    float: left;*/
+/*    padding-right: 5px;*/
+/*}*/
+
+/*.shop-right li a {*/
+/*    text-decoration: none;*/
+/*    color: #252525;*/
+/*    font-weight: bold;*/
+
+/*}*/
+
+/*.shop-clear {*/
+/*    clear: both;*/
+/*}*/

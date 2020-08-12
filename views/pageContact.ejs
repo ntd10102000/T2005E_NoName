@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> <%= title %> </title>
+    <%- include('header/headerBasicCss.ejs'); %>
+    <%- include('header/headerFontsAwsome.ejs'); %>
+    <%- include('header/headerGoogleFont.ejs'); %>
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+<%- include('bodyHeaderFooter/bodyHeader.ejs'); %>
+<%- include('bodyHeaderFooter/bodyHeaderUnder.ejs'); %>
+
+<div id="page" class="hfeed site">
+    <div id="primary" class="no-padding content-area no-sidebar">
+        <div class="container">
+            <div class="row">
+                <main id="main" class="col-md-12 site-main main-content">
+                    <article id="post-8666" class="post-8666 page type-page status-publish hentry">
+                        <div class="entry-content">
+                            <div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1515594316799" style="position: relative; left: -135px; box-sizing: border-box; width: 1440px; padding-left: 135px; padding-right: 135px;">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="wpb_wrapper">
+                                        <div class="title-subtile-holder">
+                                            <h1 class="section-title dark_title">Contact us</h1>
+                                            <div class="section-subtitle dark_subtitle">(This page and its function has not been completed due to lack of database knowledge and skills. This is just an interface!)</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="form" class="wpcf7" id="wpcf7-f4-p8666-o1" lang="en-US" dir="ltr">
+                                    <form action="/contact-us/#wpcf7-f4-p8666-o1" method="post" class="wpcf7-form init" novalidate="novalidate">
+                                        <div class="form-groomax">
+                                            <div class="row">
+                                                <div class="col-md-4"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name"></span></div>
+                                                <div class="col-md-4"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email"></span></div>
+                                                <div class="col-md-4"><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Subject"></span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12"><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your Message"></textarea></span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12"><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="section">
+    <div class="containerMap">
+        <div id="map" style="width: 900px;height: 450px"></div>
+    </div>
+</section>
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var uluru = {lat: 21.0290081, lng: 105.7818665};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 18, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map,
+            label: {
+                text:"x",
+                color:"green"
+            }
+        });
+    }
+</script>
+<script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaj0mHlR-keu-9hsR6d-gB0L9BclG04rk&callback=initMap">
+</script>
+
+<%- include('buttonToTop.ejs'); %>
+<%- include('bodyHeaderFooter/bodyFooter.ejs'); %>
+</body>
+</html>

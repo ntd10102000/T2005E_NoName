@@ -1,0 +1,65 @@
+<div class="secttion footter">
+    <div class="containerner">
+        <div class="siderba1">
+            <a href="/">
+                <img src="/imgs/header_footer/logo.png"/>
+            </a>
+            <p>
+                <span>Adress: </span>
+                Hanoi, Vietnam
+            </p>
+            <p>
+                <span>Phone: </span>
+                <a href="tel:84857870789">(+084 787 0789)</a>
+
+            </p>
+            <p>
+                <span>Email: </span>
+                <a href= "mailto:ngminhtien98@icloud.com">ngminhtien98@icloud.com</a>
+            </p>
+            <p>
+                <span>Website: </span>
+                <a href="https://noname-t2005e.herokuapp.com">www.noname-t2005e.herokuapp.com</a>
+            </p>
+            <div class="linklink">
+                <a href="https://www.facebook.com" target="_blank" style="color: white"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="linklink">
+                <a href="https://www.twitter.com" target="_blank" style="color: white"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="linklink">
+                <a href="https://www.pinterest.com" target="_blank" style="color: white"><i class="fa fa-pinterest"></i></a>
+            </div>
+            <div class="linklink">
+                <a href="https://www.instagram.com" target="_blank" style="color: white"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="siderba2">
+            <h2>Useful Links</h2>
+            <a href="/booking"><i class="fas fa-angle-double-right"></i>Book your appointment</a><br/>
+            <a href="/blog"><i class="fas fa-angle-double-right"></i>Our latest news</a><br/>
+            <a href="/contact"><i class="fas fa-angle-double-right"></i>About us page</a><br/>
+        </div>
+        <div class="siderba3">
+            <h2>Recent posts</h2>
+            <% articleRecentPost.map(function (e) { %>
+                <div class="siderba3_content">
+                    <img src="<%= e.thumbnail %>">
+                    <a href="/blog/<%= e.id %>"><%= e.title %></a><br/>
+                    <a href="/time/<%=e.time%>"><span><%= e.time %></span></a>
+                    <div class="flex">
+                        <a href="/blog/<%= e.id %>"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+        <div class="siderba4">
+            <h2>Tags (<%= tagDict.size %>) </h2>
+            <% tagDict.forEach(function (value, key, map) { %>
+                <div class="siderba4_box">
+                    <a href="/tag/<%=key%>"><button><%= key + " (" + value + ")" %></button></a>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</div>

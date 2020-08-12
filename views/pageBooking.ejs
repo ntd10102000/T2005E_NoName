@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> <%= title %> </title>
+    <%- include('header/headerBasicCss.ejs'); %>
+    <%- include('header/headerFontsAwsome.ejs'); %>
+    <%- include('header/headerGoogleFont.ejs'); %>
+    <link rel="stylesheet"  href="/css/pageBookanapp.css">
+</head>
+<body>
+<%- include('bodyHeaderFooter/bodyHeader.ejs'); %>
+<%- include('bodyHeaderFooter/bodyHeaderUnder.ejs'); %>
+<div class="secttion slide4">
+    <div class="containerner">
+        <div class="slide3_head">
+            <h2 style="margin-top: -30px;">Book Now</h2>
+            <p>Let's see us</p>
+        </div>
+        <div class="input">
+            <h2>Book an appointment</h2>
+            <p>When do you want to come?</p>
+            <form method="post" action="#">
+                <div class="input_content">
+                    <label>select a day</label>
+                    <input type="date" name="date" placeholder="27 Jul 2020"/>
+                </div>
+                <div class="input_content">
+                    <label style="margin-left: 1.2em;">select an hour</label>
+                    <input type="time" name="time" placeholder="08:00">
+                </div>
+            </form>
+            <button class="nextstep" type="button" onclick="loading(this)">NEXT STEP <i class="fas fa-chevron-right"></i></button>
+            <div id="loader"></div>
+        </div>
+        <div id="input1" class="input1">
+            <h2>Book an appointment</h2>
+            <p class="what">What do you need?</p>
+            <form method="post" action="#">
+                <div class="input1_content">
+                    <label class="dat" onclick="an(this)">
+                        <input type='checkbox'>
+                        <span></span>
+                        Groom
+                        <p id="gia">15$</p>
+                    </label>
+                    <div class="hr1">
+                        <hr/>
+                    </div>
+                    <label class="chot">
+                        <p>Groom</p>
+                        <span>
+                                <small>
+                                    DURATION:
+                                </small>
+                                  02:00
+                            </span>
+                    </label>
+                    <div class="hr2">
+                        <hr/>
+                    </div>
+                    <div class="thanhtien">
+                        <h3 class="h3_left">
+                            Subtotal
+                        </h3>
+                        <h3 class="h3_right">
+                            0$
+                        </h3>
+                    </div>
+                </div>
+            </form>
+            <button class="nextstep" onclick="loading1(this)">NEXT STEP <i class="fas fa-chevron-right"></i></button>
+            <button class="back" type="button" onclick="loadingback(this)"><i class="fas fa-angle-left"></i> BACK</button>
+        </div>
+        <div class="input2">
+            <h2>Book an appointment</h2>
+            <p class="what">Something more?</p>
+            <form method="post" action="#">
+                <div class="input2_content">
+                    <label class="dat" onclick="an(this)">
+                        <input type='checkbox'>
+                        <span></span>
+                        PAWdicure
+                        <p id="a">5$</p>
+                    </label>
+                    <div class="hr1">
+                        <hr/>
+                    </div>
+                    <label class="chot">
+                        <p>PAWdicure</p>
+                        <span>
+                                <small>
+                                    DURATION:
+                                </small>
+                                  01:00
+                            </span>
+                    </label><br/><br/><br/><br/>
+                    <label class="dat" onclick="an(this)">
+                        <input type='checkbox'>
+                        <span></span>
+                        Bath & Brush
+                        <p id="b" style="margin-left: 270px!important;">20$</p>
+                    </label>
+                    <div class="hr1">
+                        <hr/>
+                    </div>
+                    <label class="chot">
+                        <p>Bath & Brush</p>
+                        <span>
+                                <small>
+                                    DURATION:
+                                </small>
+                                  00:30
+                            </span>
+                    </label>
+                    <div class="hr2">
+                        <hr/>
+                    </div>
+                    <div class="thanhtien">
+                        <h3 class="h3_left">
+                            Subtotal
+                        </h3>
+                        <h3 class="h3_right">
+                            0$
+                        </h3>
+                    </div>
+                </div>
+            </form>
+            <button class="nextstep" type="button" onclick="loading2(this)">NEXT STEP <i class="fas fa-chevron-right"></i></button>
+            <button class="back" type="button" onclick="loadingback1(this)"><i class="fas fa-angle-left"></i> BACK</button>
+        </div>
+        <div class="input3">
+            <h2>Book an appointment</h2>
+            <p>Returning customer? Please, log-in.</p>
+            <form method="post" action="#">
+                <div class="input3_content">
+                    <label>E-mail</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="input3_content">
+                    <label style="margin-left: 1.2em;">Password</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="forgot">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </form>
+            <button class="login" type="button">LOGIN <i class="fas fa-user"></i></button>
+            <p style="margin-top: 60px">Checkout as a guest, An account will be automatically created</p>
+            <form method="post" action="#">
+                <div class="input3_content">
+                    <label>First name</label>
+                    <input type="text" name="firstname">
+                </div>
+                <div class="input3_content">
+                    <label style="margin-left: 1.2em;">
+                        Last name</label>
+                    <input type="text" name="lastname">
+                </div>
+                <div class="input3_content">
+                    <label>e-mail</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="input3_content">
+                    <label style="margin-left: 1.2em;">Mobile phone</label>
+                    <input type="tel" name="tel">
+                </div>
+                <div class="input3_content1">
+                    <label>Address</label>
+                    <input style="width: 96%" type="text" name="address">
+                </div>
+                <div class="input3_content">
+                    <label >Password</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="input3_content">
+                    <label style="margin-left: 1.2em;">
+                        Confirm your password</label>
+                    <input type="password" name="password">
+                </div>
+                <button class="nextstep">NEXT STEP <i class="fas fa-chevron-right"></i></button>
+                <button class="back" type="button" onclick="loadingback2(this)"><i class="fas fa-angle-left"></i> BACK</button>
+            </form>
+        </div>
+        <div class="right_img">
+            <img src="imgs/header_footer/booknow.jpg.png">
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    function an(i) {
+        var p = $("#gia").text();
+        $(".h3_right").text(p);
+    }
+    function an1(i) {
+        $(".h3_right").text("0$");
+    }
+
+    var myVar;
+    function loading(i) {
+        $("#loader").css({
+            "display":"block",
+        });
+        myVar=setTimeout(function () {
+            $("#loader").css({
+                "display":"none",
+            });
+            $(".input1").css({
+                "display":"block",
+            })
+        }, 3000)
+    }
+    var myVar;
+    function loading1(i) {
+        $("#loader").css({
+            "display":"block",
+        });
+        myVar=setTimeout(function () {
+            $("#loader").css({
+                "display":"none",
+            });
+            $(".input1 span").css({
+                "display": "none",
+            });
+            $(".input1 small").css({
+                "display": "none",
+            });
+            $(".input2").css({
+                "display":"block",
+            })
+        }, 3000)
+    }
+    var myVar;
+    function loading2(i) {
+        $("#loader").css({
+            "display": "block",
+        });
+        myVar = setTimeout(function () {
+            $("#loader").css({
+                "display": "none",
+            });
+            $(".input1 span").css({
+                "display": "none",
+            });
+            $(".input2 span").css({
+                "display": "none",
+            });
+            $(".input3").css({
+                "display": "block",
+            })
+        }, 3000)
+    }
+    function loadingback(i) {
+        $("#loader").css({
+            "display":"block",
+        });
+        myVar=setTimeout(function () {
+            $("#loader").css({
+                "display":"none",
+            });
+            $(".input1").css({
+                "display":"none",
+            })
+        }, 3000)
+    }
+    function loadingback1(i) {
+        $("#loader").css({
+            "display":"block",
+        });
+        myVar=setTimeout(function () {
+            $("#loader").css({
+                "display":"none",
+            });
+            $(".input1 span").css({
+                "display": "block",
+            });
+            $(".input2").css({
+                "display":"none",
+            })
+        }, 3000)
+    }
+    function loadingback2(i) {
+        $("#loader").css({
+            "display":"block",
+        });
+        myVar=setTimeout(function () {
+            $("#loader").css({
+                "display":"none",
+            });
+            $(".input2 span").css({
+                "display": "block",
+            });
+            $(".input3").css({
+                "display":"none",
+            })
+        }, 3000)
+    }
+</script>
+<%- include('buttonToTop.ejs'); %>
+<%- include('bodyHeaderFooter/bodyFooter.ejs'); %>
+</body>
+</html>

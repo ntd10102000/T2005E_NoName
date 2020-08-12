@@ -1,0 +1,47 @@
+[
+  {
+    "image": "imgs/shop/Butterfly-fish.jpg",
+    "title": "Butterfly fish",
+    "cost": "$75.00"
+  },
+  {
+    "image": "imgs/shop/Chinchilla.jpg",
+    "title": "Chinchilla",
+    "cost": "$130.00"
+  },
+  {
+    "image": "imgs/shop/Clownfish.jpg",
+    "title": "Clownfish",
+    "cost": "$60.00"
+  },
+  {
+    "image": "imgs/shop/Eastern-Rosella.jpg",
+    "title": "Eastern Rosella",
+    "cost": "$100.00"
+  },
+  {
+    "image": "imgs/shop/Eclectus-Parrot.jpg",
+    "title": "Eclectus Parrot",
+    "cost": "$250.00"
+  },
+  {
+    "image": "imgs/shop/Gerbils.jpg",
+    "title": "Gerbil rodent",
+    "cost": "$10.00"
+  },
+  {
+    "image": "imgs/shop/Golden-Conur.jpg",
+    "title": "Golden Conur",
+    "cost": "$100.00"
+  },
+  {
+    "image": "imgs/shop/Golden-Retriever.jpg",
+    "title": "Golden Retriever dog",
+    "cost": "$200.00"
+  },
+  {
+    "image": "imgs/shop/Guinea-Pig.jpg",
+    "title": "Guinea pig",
+    "cost": "$20.00"
+  }
+]

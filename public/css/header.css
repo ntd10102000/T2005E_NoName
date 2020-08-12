@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    color: #343132;
+    background-color: #f2f2f2;
+    transition: background-color .5s;
+}
+.secttion{
+    float: left;
+    width: 100%;
+}
+.containerner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.headd{
+    background-color: #ffd600;
+    padding: 16px 0;
+}
+.tel{
+    float: left;
+    width: 50%;
+}
+.tel i{
+    color: #333333;
+    font-size: 1.4em;
+}
+.tel a{
+    font-weight: 300;
+    text-decoration: none;
+    color: #252525;
+    margin-right: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+.face {
+    float: right;
+    width: 42%;
+}
+.face a{
+    float: right;
+    margin-right: 20px;
+    font-size: 1.4em;
+    color: #ffffff;
+}
+.searchicon{
+    float: right;
+    width: 8%;
+}
+.searchicon i{
+    float: right;
+    margin-left: 20px;
+    font-size: 1.4em;
+    color: #333333;
+}
+.headder{
+    background-color: #f7f7f7;
+    font-size: 20px;
+    font-weight: 700;
+    color: #252525;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+.logo{
+    float: left;
+    width: 30%;
+    padding-top: 20px;
+}
+.headder .logo img{
+    max-width: 120px;
+    height: auto;
+}
+.right{
+    float: right;
+    width: 70%;
+}
+/**/
+.navbarbar {
+    float: right;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+.navbarbar a {
+    float: left;
+    color: #252525;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 16px;
+    font-size: 16px;
+}
+
+.dropdowndown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdowndown .dropbtntn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #252525;
+    background-color: #f7f7f7;
+    height: 100px;
+    margin: 0 10px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+.dropdowndown-content {
+    display: none;
+    position: absolute;
+    background-color: #f7f7f7;
+    min-width: 160px;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.linklink{
+    float: left;
+    margin-top: 19.3px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+
+.dropdowndown-content a {
+    float: none;
+    color: #252525;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbarbar a:hover {
+    color: #ffd600;
+}
+.dropdowndown .dropbtntn:hover{
+    color: #ffd600;
+}
+
+.dropdowndown:hover .dropdowndown-content {
+    display: block;
+}
+.columnn {
+    float: left;
+    padding: 10px;
+    background-color: #f7f7f7;
+    margin-right: 2px;
+    margin-left: 10px;
+}
+.columnn h3{
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+.columnn a {
+    float: none;
+    color: #252525;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 260px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+
+.columnn a:hover {
+    background-color: #ffd600;
+}
+.roww{
+    margin-left: -360px;
+    background-color: #f7f7f7;
+}
+/* Clear floats after the columnns */
+.roww:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.roww a:hover{
+    color: #252525;
+    background-color: #ffd600;
+}
+
+/**header under**/
+.header-shop-container {
+    float: left;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e4e4eb;
+}
+
+
+.shop-row {
+    float: left;
+    margin: 0 15px;
+    text-align: left;
+    padding: 25px 0;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.shop-left {
+    float: left;
+    padding: 0 15px;
+    width: 50%;
+}
+
+.shop-left h1 {
+    font-family: 'Kalam', cursive;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.shop-right {
+    float: right;
+    padding: 8px 15px;
+    width: 50%;
+    text-align: right;
+
+}
+
+.shop-right ul {
+    float: right;
+    text-align: right;
+    list-style: none;
+}
+
+.shop-right li {
+    float: left;
+    padding-right: 5px;
+}
+
+.shop-right li a {
+    text-decoration: none;
+    color: #252525;
+    font-weight: bold;
+
+}
+
+.shop-clear {
+    clear: both;
+}
+
+.tel a, .tel a:hover {
+    text-decoration: none;
+}

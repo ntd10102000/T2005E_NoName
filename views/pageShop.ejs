@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> <%= title %> </title>
+    <%- include('header/headerBasicCss.ejs'); %>
+    <%- include('header/headerFontsAwsome.ejs'); %>
+    <%- include('header/headerGoogleFont.ejs'); %>
+    <link rel="stylesheet" href="/css/shop.css">
+</head>
+<body>
+<%- include('bodyHeaderFooter/bodyHeader.ejs'); %>
+<%- include('bodyHeaderFooter/bodyHeaderUnder.ejs'); %>
+
+<div class="shop-primary">
+    <div class="shop-primary-padding"></div>
+    <p style="text-align: center; font-family: 'Nunito', sans-serif">(This page and its function has not been completed due to lack of database knowledge and skills. This is just an interface!)</p>
+    <div class="container shop-container">
+<!--        <div class="shop-row">-->
+<!--            <div class="shop-sidebar">-->
+<!--                <div class="shop-search">-->
+<!--                    <form class="search-form" method="get" action="#">-->
+<!--                        <label><input type="text" name="search-value" placeholder="Search..."></label>-->
+<!--                        <button type="submit">Search</button>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--                <div id="leftContent">-->
+<!--                    <% leftContent.map(function(c) { %>-->
+<!--                        <div class="shop-recentPost">-->
+<!--                            <h1><%= c.title %>-->
+<!--                                <div class="shop-sidebar-border"></div>-->
+<!--                            </h1>-->
+<!--                            <ul>-->
+<!--                                <li><i class="fas fa-angle-double-right"></i><a href="#"><%= c.line1 %></a></li>-->
+<!--                                <li><i class="fas fa-angle-double-right"></i><a href="#"><%= c.line2 %></a></li>-->
+<!--                                <li><i class="fas fa-angle-double-right"></i><a href="#"><%= c.line3 %></a></li>-->
+<!--                                <li><i class="fas fa-angle-double-right"></i><a href="#"><%= c.line4 %></a></li>-->
+<!--                                <li><i class="fas fa-angle-double-right"></i><a href="#"><%= c.line5 %></a></li>-->
+<!--                                <li><i class="fas fa-angle-double-right"></i><a href="#"><%= c.line6 %></a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    <% }) %>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="shop-main-content">
+                <div class="shop-main-content-status">
+                    <div class="shop-main-content-result">Showing 9 results</div>
+                    <form class="shop-main-content-sorting">
+                        <select name="shop-sorting">
+                            <option>Default sorting</option>
+                            <option>Sort by popularity</option>
+                            <option>Sort by average rating</option>
+                            <option>Sort by latest</option>
+                            <option>Sort by price: low to high</option>
+                            <option>Sort by price: high to low</option>
+                        </select>
+                    </form>
+                </div>
+                <ul class="shop-main-products">
+                    <div id="rightContent">
+                        <% rightContent.map(function (d) { %>
+                            <li>
+                                <div class="thumbnail-details">
+                                    <div class="hover-container">
+                                        <a href="#">
+                                            <div class="thumbnail-background"></div>
+                                        </a>
+                                        <div class="hover-product">
+                                            <div class="shop-opacity Add-to-cart-button"><a href="#"><i class="fas fa-shopping-cart"></i>Add to cart</a></div>
+                                            <div class="shop-opacity Add-to-wishlist-button"><a href="#"><i class="fas fa-gift"></i>Add to Wishlist</a></div>
+                                            <div class="shop-opacity Compare-button"><a href="#"><i class="fas fa-exchange-alt"></i>Compare</a></div>
+                                            <div class="shop-opacity Quickview-button"><a href="#" ><i class="fas fa-search"></i>Quickview</a></div>
+                                        </div>
+                                    </div>
+                                    <img src="<%= d.image %>"/>
+                                </div>
+                                <h3><a href="#"><%= d.title %></a></h3>
+                                <div class="shop-money"><%= d.cost %></div>
+                            </li>
+                        <% }) %>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('buttonToTop.ejs'); %>
+<%- include('bodyHeaderFooter/bodyFooter.ejs'); %>
+</body>
+</html>

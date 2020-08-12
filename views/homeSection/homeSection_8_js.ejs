@@ -1,0 +1,188 @@
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-long-arrow-alt-up"></i></button>
+<script type="text/javascript">
+    function tabs(e,number) {
+        var li = document.getElementsByClassName("item");
+        for(var i of li){
+            i.classList.remove("active");
+        }
+        e.classList.add("active");
+        document.getElementById("cinema").style.left = -number*594+"px";
+    }
+
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    function an(i) {
+        var p = $("#gia").text();
+        $(".h3_right").text(p);
+    }
+    function an1(i) {
+        $(".h3_right").text("0$");
+    }
+
+    var myVar;
+    function loading(i) {
+        $("#loader").css({
+            "display":"block",
+        });
+        myVar=setTimeout(function () {
+            $("#loader").css({
+                "display":"none",
+            });
+            $(".input1").css({
+                "display":"block",
+            })
+        }, 3000)
+    }
+    var myVar;
+    function loading1(i) {
+        $("#loader").css({
+            "display":"block",
+        });
+        myVar=setTimeout(function () {
+            $("#loader").css({
+                "display":"none",
+            });
+            $(".input1 span").css({
+                "display": "none",
+            });
+            $(".input1 small").css({
+                "display": "none",
+            });
+            $(".input2").css({
+                "display":"block",
+            })
+        }, 3000)
+    }
+    var myVar;
+    function loading2(i) {
+        $("#loader").css({
+            "display": "block",
+        });
+        myVar = setTimeout(function () {
+            $("#loader").css({
+                "display": "none",
+            });
+            $(".input1 span").css({
+                "display": "none",
+            });
+            $(".input2 span").css({
+                "display": "none",
+            });
+            $(".input3").css({
+                "display": "block",
+            })
+        }, 3000)
+    }
+    function loadingback(i) {
+        $("#loader").css({
+            "display":"block",
+        });
+        myVar=setTimeout(function () {
+            $("#loader").css({
+                "display":"none",
+            });
+            $(".input1").css({
+                "display":"none",
+            })
+        }, 3000)
+    }
+    function loadingback1(i) {
+        $("#loader").css({
+            "display":"block",
+        });
+        myVar=setTimeout(function () {
+            $("#loader").css({
+                "display":"none",
+            });
+            $(".input1 span").css({
+                "display": "block",
+            });
+            $(".input2").css({
+                "display":"none",
+            })
+        }, 3000)
+    }
+    function loadingback2(i) {
+        $("#loader").css({
+            "display":"block",
+        });
+        myVar=setTimeout(function () {
+            $("#loader").css({
+                "display":"none",
+            });
+            $(".input2 span").css({
+                "display": "block",
+            });
+            $(".input3").css({
+                "display":"none",
+            })
+        }, 3000)
+    }
+    function openNav() {
+        $("#mySidenav").css({
+            "width":"460px",
+        });
+        $("body").css({
+            "backgroundColor":"rgba(0,0,0,0.4)",
+        })
+    }
+
+    function closeNav() {
+        $("#mySidenav").css({
+            "width":"0",
+        });
+        $("body").css({
+            "backgroundColor":"#f2f2f2",
+        })
+    }
+
+    var dem=0;
+    var o = setInterval(function () {
+        dem++;
+        $("#dem").text(dem);
+        if (dem==100){
+            clearInterval(o);
+        }
+    }, 100)
+    var dem1=0;
+    var o1 = setInterval(function () {
+        dem1++;
+        $("#dem1").text(dem1);
+        if (dem1==4){
+            clearInterval(o1);
+        }
+    }, 100)
+    var dem2=0;
+    var o2 = setInterval(function () {
+        dem2++;
+        $("#dem2").text(dem2);
+        if (dem==50){
+            clearInterval(o2);
+        }
+    }, 100)
+    var dem3=0;
+    var o3 = setInterval(function () {
+        dem3++;
+        $("#dem3").text(dem3);
+        if (dem3==3){
+            clearInterval(o3);
+        }
+    }, 100)
+</script>

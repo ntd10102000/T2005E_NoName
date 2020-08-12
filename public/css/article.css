@@ -1,0 +1,107 @@
+.article a {
+    text-decoration: none;
+    color: black;
+}
+
+.article a:hover {
+    text-decoration: none;
+}
+
+
+.blog_heading {
+    font-family: 'Kalam', cursive;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-top: 0;
+}
+
+.articleContainer {
+    padding: 80px 15px;
+}
+
+
+.article {
+    width: 100%;
+    height: auto;
+    background: #fcfcfc;
+    border: 1px solid #ededed;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.articleThumb {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.articleThumb img {
+    width: 100%;
+    height: auto;
+
+}
+
+.articleShortContent {
+    float: left;
+    width: 100%;
+    align-self: center;
+    padding-left: 30px;
+    padding-right: 60px;
+}
+
+
+.icon {
+    margin-right: 10px;
+}
+
+#articleTitle {
+    font-family: 'Kalam', cursive;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.articleTitle:hover, .date:hover, .tag:hover {
+    color: rgb(255,214,0);
+    transition: all 400ms;
+}
+
+
+.articleInfo a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    margin: 0 0 12px;
+    color: rgb(165, 165, 165);
+}
+
+.time{
+    margin-right: 25px
+}
+
+.tag {
+    text-transform: capitalize;
+}
+
+.article .shortContent {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2.0;
+    text-align: justify;
+    color: rgb(139,139,139);
+    margin-top: 1.5px;
+    margin-bottom: 20px;
+}
+
+.btnContinue {
+    font-family: 'Nunito', sans-serif;
+    padding: 8px 18px;
+    background: none;
+    border: 2px solid rgb(37,37,37);
+    border-radius: 5px;
+}

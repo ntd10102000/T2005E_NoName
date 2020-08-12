@@ -1,0 +1,59 @@
+.title-subtile-holder{
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.section-title {
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.section-subtitle {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.wpcf7-form input, .wpcf7-form textarea {
+    border: 1px solid rgba(37, 37, 37, 0.3);
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    padding: 1em 1.5em;
+    transition: all 0.3s ease-in-out 0s !important;
+    width: 100%;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height:inherit
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin-right: 0;
+    background: #009dde;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px !important;
+}
+
+.containerMap {
+    width: 100%;
+    padding: 40px;
+    position: relative;
+    left: 25%;
+    right: 25%;
+}
+
+.section #map {
+    border: 1px solid rgba(37, 37, 37, 0.3);
+}

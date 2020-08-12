@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title%> </title>
+    <%- include('header/headerBasicCss.ejs'); %>
+    <%- include('header/headerFontsAwsome.ejs'); %>
+    <%- include('header/headerGoogleFont.ejs'); %>
+    <link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+<%- include('bodyHeaderFooter/bodyHeader.ejs'); %>
+<%- include('bodyHeaderFooter/bodyHeaderUnder.ejs'); %>
+    <div class="container articleContainer">
+        <div class="row">
+            <div class="articleArea">
+                <% currentArticle.map(function (e) { %>
+                    <div class="article">
+                        <div class="articleThumb">
+                            <img src="<%= e.thumbnail%>">
+                        </div>
+                        <div class="articleShortContent">
+                            <span id="articleTitle"><%= e.title%></span>
+                            <div class="articleInfo">
+                                <a href="/time/<%= e.time%>"><i class="far fa-calendar-alt icon"></i><span class="time"><%= e.time%></span></a>
+                                <i class="fas fa-tag icon"></i>
+                                <% e.tag.map(function(x) { %>
+                                    <a href="/tag/<%= x%>"><span class="tag"><%= x + ", " %></span></a>
+                                <% }) %>
+                            </div>
+                            <div class="shortContent"><%= e.content%></div>
+                            </a>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+<%- include('buttonToTop.ejs'); %>
+<%- include('bodyHeaderFooter/bodyFooter.ejs'); %>
+
+</body>
+</html>
